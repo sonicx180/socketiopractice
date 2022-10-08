@@ -6,6 +6,9 @@ const form = document.getElementById("submit")
 const message = document.getElementById("message").value;
 
 socket.emit('chat',message)
+socket.on('chat', () => {
+    
+})
 
 
 
