@@ -1,3 +1,7 @@
 body {
     background:rgb(66,135,245)
 }
+
+#messages {
+    border:5px solid rgb(94, 95, 97)
+}

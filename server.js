@@ -7,6 +7,10 @@ const io = new Server(server);
 
 io.on("connection", socket => {
     console.log("A user is connected")
+
+    socket.on("chat",(data) => {
+        socket.emit("chat",data)
+    })
 });
 app.get('/client/:file',(req,res) => {
     res.sendFile(__dirname + `/client/${req.params.file}`)
